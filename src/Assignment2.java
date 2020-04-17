@@ -35,11 +35,12 @@ public class Assignment2 {
 		s4.selectByVisibleText("Business");
 		WebElement flight = d.findElement(By.id("AirlineAutocomplete"));
 		flight.sendKeys("indego");
+		System.out.println(flight.getAttribute("value"));
 		WebElement submit = d.findElement(By.id("SearchBtn"));
 		submit.click();
 		WebElement error = d.findElement(By.id("homeErrorMessage"));
 		String msg = error.getText();
 		System.out.println(msg);
+		System.out.println("govinsanthosh");
 	}
-
 }
